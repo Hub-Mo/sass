@@ -10,7 +10,7 @@ body {
   background-attachment: fixed;
 }
 
-article {
+body article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,7 +18,7 @@ article {
       flex-wrap: wrap;
 }
 
-article section {
+body article section {
   -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
   box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
   -webkit-box-flex: 1;
@@ -35,7 +35,7 @@ article section {
           box-sizing: border-box;
 }
 
-article section#selling-points {
+body article section#selling-points {
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
@@ -43,7 +43,7 @@ article section#selling-points {
       flex-basis: 100%;
 }
 
-article code {
+body article code {
   background: #000;
   border: 1px solid #ddd;
   color: #666;
@@ -59,29 +59,29 @@ article code {
   word-wrap: break-word;
 }
 
-article code.after {
+body article code.after {
   float: right;
   width: 40%;
 }
 
-h1,
-h2,
-h6 {
+body h1,
+body h2,
+body h6 {
   color: #6B8EFF;
 }
 
-h1 {
+body h1 {
   text-align: center;
 }
 
-h6 {
+body h6 {
   text-align: center;
   font-size: 2em;
   padding: 32px;
   margin-bottom: 0px;
 }
 
-.message, .success, .error, .warning {
+body .message, body .success, body .error, body .warning {
   border: 1px solid #ccc;
   padding: 10px;
   color: #2748B3;
@@ -89,15 +89,15 @@ h6 {
   width: 100%;
 }
 
-.success {
+body .success {
   background-color: green;
 }
 
-.error {
+body .error {
   background-color: red;
 }
 
-.warning {
+body .warning {
   background-color: orange;
 }
 /*# sourceMappingURL=style.css.map */

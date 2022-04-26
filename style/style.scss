@@ -1,12 +1,15 @@
 
-
+//mixins///////////
 @mixin shadows {
     -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
     -moz-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
     box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
     }
+
+// variables////////
     $red: 16px;
     $blue: 8px;
+
 body {
     font: 100% "Space Mono", monospace;
     color: #2748B3;
@@ -16,92 +19,91 @@ body {
     background-image: radial-gradient(#fff, rgba(255, 255, 255, 0.2) 2px, transparent 40px), radial-gradient(#fff, rgba(255, 255, 255, 0.15) 1px, transparent 30px), radial-gradient(#fff, rgba(255, 255, 255, 0.1) 2px, transparent 40px), radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 2px, transparent 30px);
     background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
     background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
-    background-attachment: fixed
-}
-
-article {
-    display: flex;
-    flex-wrap: wrap;
-
-    section {
-        @include shadows();
-        flex-grow: 1;
-        flex-basis: 45%;
-        border: 1px silver solid;
-        padding: $red;
-        margin: 16px;
-        clear: both;
-        overflow: auto;
-        box-sizing: border-box;
+    background-attachment: fixed;
+    article {
+        display: flex;
+        flex-wrap: wrap;
+    
+        section {
+            @include shadows();
+            flex-grow: 1;
+            flex-basis: 45%;
+            border: 1px silver solid;
+            padding: $red;
+            margin: 16px;
+            clear: both;
+            overflow: auto;
+            box-sizing: border-box;
+        }
+    
+        section#selling-points {
+            flex-grow: 2;
+            flex-basis: 100%
+        }
+    
+        code {
+            background: #000;
+            border: 1px solid #ddd;
+            color: #666;
+            page-break-inside: avoid;
+            font-family: monospace;
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 1.6em;
+            max-width: 100%;
+            overflow: auto;
+            padding: 1em 1.5em;
+            display: block;
+            word-wrap: break-word
+        }
+    
+        code.after {
+            float: right;
+            width: 40%
+        }
     }
 
-    section#selling-points {
-        flex-grow: 2;
-        flex-basis: 100%
+
+    h1,
+    h2,
+    h6 {
+        color: #6B8EFF
     }
 
-    code {
-        background: #000;
-        border: 1px solid #ddd;
-        color: #666;
-        page-break-inside: avoid;
-        font-family: monospace;
-        font-size: 15px;
-        line-height: 1.6;
-        margin-bottom: 1.6em;
-        max-width: 100%;
-        overflow: auto;
-        padding: 1em 1.5em;
-        display: block;
-        word-wrap: break-word
+    h1 {    
+        text-align: center
     }
 
-    code.after {
-        float: right;
-        width: 40%
+    h6 {
+        text-align: center;
+        font-size: 2em;
+        padding: $red * 2;
+        margin-bottom: 0px
     }
-}
 
+    .message {
+        border: 1px solid #ccc;
+        padding: 10px;
+        color: #2748B3;
+        background-color: #000;
+        width: 100%
+    }
 
-h1,
-h2,
-h6 {
-    color: #6B8EFF
-}
+    .success {
+        @extend .message;
+        background-color: green
+    }
 
-h1 {
-    text-align: center
-}
-
-h6 {
-    text-align: center;
-    font-size: 2em;
-    padding: $red * 2;
-    margin-bottom: 0px
-}
-
-.message {
-    border: 1px solid #ccc;
-    padding: 10px;
-    color: #2748B3;
-    background-color: #000;
-    width: 100%
-}
-
-.success {
-    @extend .message;
-    background-color: green
-}
-
-.error {
+    .error {
     @extend .message;
     background-color: red
-}
+    }
 
-.warning {
+    .warning {
     @extend .message;
     background-color: orange
-}
+    }
 
+}
 
 
