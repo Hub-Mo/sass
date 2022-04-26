@@ -1,14 +1,11 @@
 
-//mixins///////////
 @mixin shadows {
     -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
     -moz-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
     box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
     }
 
-// variables////////
     $red: 16px;
-    $blue: 8px;
 
 body {
     font: 100% "Space Mono", monospace;
@@ -59,7 +56,7 @@ body {
     
         code.after {
             float: right;
-            width: 40%
+            width: 40%;
         }
     }
 

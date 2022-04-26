@@ -9,40 +9,27 @@ body {
   background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
   background-attachment: fixed;
 }
-
 body article {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
-
 body article section {
   -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
   box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-preferred-size: 45%;
-      flex-basis: 45%;
+  flex-grow: 1;
+  flex-basis: 45%;
   border: 1px silver solid;
   padding: 16px;
   margin: 16px;
   clear: both;
   overflow: auto;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 body article section#selling-points {
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  flex-grow: 2;
+  flex-basis: 100%;
 }
-
 body article code {
   background: #000;
   border: 1px solid #ddd;
@@ -58,46 +45,39 @@ body article code {
   display: block;
   word-wrap: break-word;
 }
-
 body article code.after {
   float: right;
   width: 40%;
 }
-
 body h1,
 body h2,
 body h6 {
   color: #6B8EFF;
 }
-
 body h1 {
   text-align: center;
 }
-
 body h6 {
   text-align: center;
   font-size: 2em;
   padding: 32px;
   margin-bottom: 0px;
 }
-
-body .message, body .success, body .error, body .warning {
+body .message, body .warning, body .error, body .success {
   border: 1px solid #ccc;
   padding: 10px;
   color: #2748B3;
   background-color: #000;
   width: 100%;
 }
-
 body .success {
   background-color: green;
 }
-
 body .error {
   background-color: red;
 }
-
 body .warning {
   background-color: orange;
 }
+
 /*# sourceMappingURL=style.css.map */
