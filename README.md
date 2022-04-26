@@ -27,6 +27,18 @@ mixins:
     header {
         @include name();
     }
+    
+
+importing external scss files:
+
+    ex of making an external file: 
+    _header.scss
+
+    then if you want to import this file you use =
+
+    @import "./header" 
+
+    into your main scss file
 
 nesting:
 

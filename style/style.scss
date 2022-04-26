@@ -1,9 +1,5 @@
 
-@mixin shadows {
-    -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
-    -moz-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
-    box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
-    }
+@import "./mixin";
 
     $red: 16px;
 
@@ -27,7 +23,7 @@ body {
             flex-basis: 45%;
             border: 1px silver solid;
             padding: $red;
-            margin: 16px;
+            margin: $red;
             clear: both;
             overflow: auto;
             box-sizing: border-box;
@@ -44,7 +40,7 @@ body {
             color: #666;
             page-break-inside: avoid;
             font-family: monospace;
-            font-size: 15px;
+            font-size: $red;
             line-height: 1.6;
             margin-bottom: 1.6em;
             max-width: 100%;
@@ -92,13 +88,13 @@ body {
     }
 
     .error {
-    @extend .message;
-    background-color: red
+        @extend .message;
+        background-color: red
     }
 
     .warning {
-    @extend .message;
-    background-color: orange
+        @extend .message;
+        background-color: orange
     }
 
 }
