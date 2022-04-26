@@ -19,14 +19,14 @@ article {
 }
 
 article section {
+  -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
+  box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   -ms-flex-preferred-size: 45%;
       flex-basis: 45%;
   border: 1px silver solid;
-  -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
-  box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
   padding: 16px;
   margin: 16px;
   clear: both;
@@ -59,11 +59,6 @@ article code {
   word-wrap: break-word;
 }
 
-article code.before {
-  float: left;
-  width: 40%;
-}
-
 article code.after {
   float: right;
   width: 40%;
@@ -86,10 +81,7 @@ h6 {
   margin-bottom: 0px;
 }
 
-.message,
-.success,
-.error,
-.warning {
+.message, .success, .error, .warning {
   border: 1px solid #ccc;
   padding: 10px;
   color: #2748B3;
