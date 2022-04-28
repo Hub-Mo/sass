@@ -1,6 +1,6 @@
 # sass
 
-https://hub-mo.github.io/sass/
+[watch the SASS exercize](https://hub-mo.github.io/sass/"this link takes you to a browser to see the exercize")
 
 
 # learned:
