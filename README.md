@@ -3,9 +3,9 @@
 https://hub-mo.github.io/sass/
 
 
-learned:
+#learned:
 
-scss variables:
+###scss variables:
 
     ex :
     => $variableName: green;
@@ -15,7 +15,7 @@ scss variables:
     }
 
 
-mixins:
+###mixins:
 
     ex of creating a mixin: 
     @mixin Name {
@@ -29,7 +29,7 @@ mixins:
     }
     
 
-importing external scss files:
+###importing external scss files:
 
     ex of making an external file: 
     _header.scss
@@ -40,7 +40,7 @@ importing external scss files:
 
     into your main scss file
 
-nesting:
+###nesting:
 
     
 
@@ -57,7 +57,7 @@ nesting:
     
     
 
-extensions:
+###extensions:
 
     .contact {
         @extend header;
@@ -65,14 +65,14 @@ extensions:
 
     this puts the same styling as header inside the contact class styling.
 
-compiling sass with a VSCode extansion and via Terminal 
-= sass --watch style/style.scss style/style.css( start watching) - stop (ctrl + C)
+###compiling sass with a VSCode extansion and via Terminal 
+```sass --watch style/style.scss style/style.css( start watching) - stop (ctrl + C)```
 
 
-extra:
-minifying style sheet:
+###extra:
+####minifying style sheet:
 
     sass --watch --style=compressed style/style.scss style/style.min.css
 
-checking the size of the style sheet via terminal = "ls -l"
+##checking the size of the style sheet via terminal = ```"ls -l"```
 
