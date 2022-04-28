@@ -3,9 +3,9 @@
 https://hub-mo.github.io/sass/
 
 
-#learned:
+# learned:
 
-###scss variables:
+### scss variables:
 
     ex :
     => $variableName: green;
@@ -15,7 +15,7 @@ https://hub-mo.github.io/sass/
     }
 
 
-###mixins:
+### mixins:
 
     ex of creating a mixin: 
     @mixin Name {
@@ -29,7 +29,7 @@ https://hub-mo.github.io/sass/
     }
     
 
-###importing external scss files:
+### importing external scss files:
 
     ex of making an external file: 
     _header.scss
