@@ -40,7 +40,7 @@ https://hub-mo.github.io/sass/
 
     into your main scss file
 
-###nesting:
+### nesting:
 
     
 
@@ -57,7 +57,7 @@ https://hub-mo.github.io/sass/
     
     
 
-###extensions:
+### extensions:
 
     .contact {
         @extend header;
@@ -65,14 +65,14 @@ https://hub-mo.github.io/sass/
 
     this puts the same styling as header inside the contact class styling.
 
-###compiling sass with a VSCode extansion and via Terminal 
+### compiling sass with a VSCode extansion and via Terminal 
 ```sass --watch style/style.scss style/style.css( start watching) - stop (ctrl + C)```
 
 
-###extra:
-####minifying style sheet:
+### extra:
+#### minifying style sheet:
 
     sass --watch --style=compressed style/style.scss style/style.min.css
 
-##checking the size of the style sheet via terminal = ```"ls -l"```
+## checking the size of the style sheet via terminal = ```"ls -l"```
 
